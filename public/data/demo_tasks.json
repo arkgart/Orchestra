@@ -1,0 +1,32 @@
+[
+  {
+    "id": "web-app",
+    "title": "Build and deploy a full-stack web app",
+    "description": "Generates a TypeScript/Next.js CRUD app, sets up Supabase, and deploys to Vercel preview.",
+    "mode": "POWER"
+  },
+  {
+    "id": "python-debug",
+    "title": "Debug failing Python tests",
+    "description": "Clone repo, reproduce failing pytest suite, patch code, and push fix branch.",
+    "mode": "GUARDED"
+  },
+  {
+    "id": "sql-analytics",
+    "title": "Translate analytics question to SQL",
+    "description": "Use DuckDB or Snowflake to run optimized SQL, produce chart, and summarize insights.",
+    "mode": "SAFE"
+  },
+  {
+    "id": "physics-sim",
+    "title": "Nonlinear physics simulation",
+    "description": "Compare symplectic integrators vs. neural ODEs via Modal GPU runners and produce plots.",
+    "mode": "POWER"
+  },
+  {
+    "id": "github-pr",
+    "title": "Issue-to-PR automation",
+    "description": "Read GitHub issue, create branch, implement fix, run CI gates, and open PR.",
+    "mode": "GUARDED"
+  }
+]

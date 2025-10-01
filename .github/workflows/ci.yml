@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Typecheck & Lint
+        run: |
+          pnpm typecheck
+          pnpm lint
+      - name: Run frontend tests
+        run: pnpm test:frontend
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest bandit
+      - name: Run pytest
+        run: pytest
+      - name: Security scan
+        run: |
+          bandit -r orchestrator_py || true
+          npx semgrep --config auto || true

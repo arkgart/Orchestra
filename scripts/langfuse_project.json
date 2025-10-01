@@ -1,0 +1,8 @@
+{
+  "name": "MEGAMIND ULTRA",
+  "description": "Trace and evaluate autonomous orchestration runs.",
+  "scorers": [
+    { "name": "correctness", "type": "numeric" },
+    { "name": "latency", "type": "numeric" }
+  ]
+}

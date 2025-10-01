@@ -1,0 +1,9 @@
+langfuse==2.3.0
+numpy==1.26.4
+openai==1.23.6
+pinecone-client==3.0.2
+requests==2.31.0
+scalene==1.5.33
+semgrep==1.65.0
+sympy==1.12
+wolframalpha==5.0.0

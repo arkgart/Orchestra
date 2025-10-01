@@ -1,0 +1,30 @@
+{
+  "sessionId": "demo-session",
+  "metrics": {
+    "avg_correctness": 0.82,
+    "avg_cost_usd": 1.47,
+    "latency_seconds": 32.4
+  },
+  "gates": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "pytest": "pass",
+    "playwright": "pass",
+    "semgrep": "pass",
+    "bandit": "pass"
+  },
+  "traces": [
+    {
+      "tool": "langfuse",
+      "url": "https://app.langfuse.com/project/megamind-ultra/session/demo-session"
+    }
+  ],
+  "profiling": {
+    "cpu_hotspots": [
+      {
+        "function": "agent.execute",
+        "pct_time": 37.1
+      }
+    ]
+  }
+}
