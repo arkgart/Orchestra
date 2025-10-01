@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "app/api/**/*": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "installCommand": "pnpm install && pip install -r requirements.txt",
+  "buildCommand": "pnpm build"
+}

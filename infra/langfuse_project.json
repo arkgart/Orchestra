@@ -1,0 +1,17 @@
+{
+  "project": "megamind-ultra",
+  "description": "Langfuse configuration for tracing orchestrator sessions.",
+  "metrics": [
+    {
+      "name": "composite_score",
+      "type": "gauge",
+      "description": "Composite evaluation score for orchestrated versions"
+    },
+    {
+      "name": "tool_cost_usd",
+      "type": "sum",
+      "description": "Aggregate tool spend per session"
+    }
+  ],
+  "tags": ["orchestrator", "quality", "security"]
+}
