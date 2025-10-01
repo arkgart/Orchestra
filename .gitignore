@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+.env.local
+.vercel
+.DS_Store
+pnpm-lock.yaml
+__pycache__
+.python-version
+.orchestrator-cache

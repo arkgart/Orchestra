@@ -1,0 +1,6 @@
+version_id,score,cost_usd,status
+code-1,0.91,4.20,succeeded
+code-2,0.88,4.18,succeeded
+code-3,0.85,4.22,succeeded
+code-4,0.83,4.10,failed
+code-5,0.80,4.05,succeeded

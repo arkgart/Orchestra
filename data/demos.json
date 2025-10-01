@@ -1,0 +1,32 @@
+[
+  {
+    "id": "demo-webapp",
+    "title": "Build web app + deploy",
+    "description": "Generate a responsive React dashboard, integrate tests, and prepare deployment instructions.",
+    "prompt": "Design and implement a responsive SaaS analytics dashboard with login, data visualizations, and deploy to Vercel preview. Include unit and integration tests."
+  },
+  {
+    "id": "demo-debug",
+    "title": "Debug failing repo",
+    "description": "Inspect failing pytest suite, patch the bug, and return passing CI summary.",
+    "prompt": "Clone https://github.com/example/broken-repo, analyze failing pytest output, implement fixes, add regression tests, and summarize the resolution."
+  },
+  {
+    "id": "demo-sql",
+    "title": "Natural language to SQL",
+    "description": "Translate executive asks to optimized SQL and visual insights.",
+    "prompt": "Given the 'sales_warehouse' dataset, produce key revenue metrics by region, generate SQL optimized for Snowflake, run via DuckDB fallback, and produce an annotated chart."
+  },
+  {
+    "id": "demo-physics",
+    "title": "Nonlinear physics simulation",
+    "description": "Solve a chaotic pendulum system with comparative solvers and plots.",
+    "prompt": "Model a double pendulum with varying initial conditions, compare SymPy and JAX integrators, plot energy drift, and recommend the best solver configuration."
+  },
+  {
+    "id": "demo-pr",
+    "title": "GitHub PR automation",
+    "description": "Read an issue, implement fix with tests, and prepare PR summary.",
+    "prompt": "Review issue #123 from the configured repository, plan a fix, create a feature branch, update code and tests, run CI, and draft a PR with risk notes."
+  }
+]
