@@ -122,6 +122,24 @@ The UI ships with five curated demos (see `public/data/demo_tasks.json`). Sugges
 
 These presets can be wired into a dedicated demo launcher (dataset provided in `public/data/demo_tasks.json`); today you can copy the descriptions into the task textarea and select the recommended mode manually.
 
+## Patent Ideation Pipeline Script
+
+The repository now includes `scripts/mega_patent_generator.py`, a standalone workflow that:
+
+- Builds a lightweight RAG corpus from arXiv, USPTO PatentsView, and optional URL seeds.
+- Explores high-temperature idea variants with novelty filtering and targeted mutations.
+- Converges on structured claim drafts plus detailed descriptions aligned to §112 requirements.
+- Assembles the generated packets into a Markdown specification ready for conversion via `pandoc`.
+
+Install the optional Python dependencies listed at the bottom of `requirements.txt`, set `OPENAI_API_KEY`, and run the script directly:
+
+```bash
+pip install -r requirements.txt
+python scripts/mega_patent_generator.py
+```
+
+Generated artifacts are stored under `build/prnu_hardware_attest_ial3_universal_coverage/` for further review.
+
 ## Generating 100 Variants
 
 1. Set mode to **POWER**.
