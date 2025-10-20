@@ -1,20 +1,4 @@
-# MEGAMIND ULTRA
 
-MEGAMIND ULTRA is a production-grade, multi-agent tournament orchestrator that explores up to 100 concurrent solution variants across software, math, data, and research tasks. It ships with a Next.js (App Router) UI deployed on Vercel, a Python-based agent brain, and adapters for premium tooling including OpenAI GPT-5 Codex, Modal, Wolfram, Pinecone, Supabase, Browserless, and Langfuse.
-
-## Repository Layout
-
-```
-app/                     # Next.js App Router UI & API routes
-components/              # Reusable UI components (React Flow, Monaco, terminals)
-lib/                     # Shared frontend utilities (policy guard, event bus, types)
-orchestrator_py/         # Python orchestrator agents, evaluators, utilities
-public/data/             # Demo task catalogue for onboarding presets
-scripts/                 # Infra bootstrap scripts (Pinecone, Langfuse)
-supabase/                # SQL schema for Supabase Postgres persistence
-tests/                   # Playwright e2e and pytest suites
-.github/workflows/       # CI pipelines (lint, test, security)
-```
 
 ## Quick Start (Local)
 
